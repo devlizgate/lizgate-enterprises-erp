@@ -1,0 +1,20 @@
+EDI Document 869 - Order Status Inquiry
+Function:
+The EDI 869 Order Status Inquiry document is used to request information on the status of an order.
+
+Example:
+
+ISA*00*          *00*          *ZZ*SENDERID      *ZZ*RECEIVERID    *YYMMDD*HHMM*U*00501*000000001*0*P*>~
+GS*OS*SENDERID*RECEIVERID*YYMMDD*HHMM*1*X*005010~
+ST*869*0001~
+BGN*00*ORIGINAL GROUP CONTROL NUMBER*20230701*HHMM*STATUS CODE~
+TRN*1*ORIGINAL TRANSACTION CONTROL NUMBER*0001~
+REF*EV*ORIGINAL TRANSACTION SET PURPOSE CODE~
+DTM*050*20180701~
+N1*PR*PARTY NAME*92*PARTY ID~
+SE*8*0001~
+GE*1*1~
+IEA*1*000000001~
+
+Purpose in Lizgate Enterprise:
+In Lizgate Enterprise, the EDI 869 document enhances order management by enabling trading partners to inquire about the status of orders, facilitating proactive customer service and efficient order fulfillment.

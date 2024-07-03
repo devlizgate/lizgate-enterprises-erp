@@ -1,0 +1,40 @@
+EDI Document 856XML - Advance Ship Notice (XML Version)
+Function:
+The EDI 856XML Advance Ship Notice document in XML format is used to electronically notify a buyer of a pending shipment, detailing contents, packaging, and carrier information.
+
+Example:
+
+<AdvanceShipNotice>
+  <Shipment>
+    <ShipmentHeader>
+      <ShipmentIdentification>
+        <ShipmentID>123456789</ShipmentID>
+        <ShipmentDate>2023-07-01</ShipmentDate>
+      </ShipmentIdentification>
+      <ShipmentStatus>
+        <Status>Original</Status>
+      </ShipmentStatus>
+    </ShipmentHeader>
+    <ShipFrom>
+      <Name>Ship From Name</Name>
+      <ID>SHIPFROMID</ID>
+    </ShipFrom>
+    <ShipTo>
+      <Name>Ship To Name</Name>
+      <ID>SHIPTOID</ID>
+    </ShipTo>
+    <Items>
+      <Item>
+        <ItemID>1</ItemID>
+        <ProductCode>PRODUCT CODE</ProductCode>
+        <UPC>UPC</UPC>
+        <Description>PRODUCT DESCRIPTION</Description>
+        <Quantity>100</Quantity>
+        <UnitOfMeasure>EA</UnitOfMeasure>
+      </Item>
+    </Items>
+  </Shipment>
+</AdvanceShipNotice>
+
+Purpose in Lizgate Enterprise:
+In Lizgate Enterprise, the EDI 856XML document enhances supply chain visibility by providing advance notification of shipments in XML format, facilitating efficient receiving processes and inventory management.

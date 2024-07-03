@@ -1,0 +1,21 @@
+EDI Document 824 - Application Advice
+Function:
+The EDI 824 Application Advice document is used to provide feedback on the status of a previously submitted transaction. It serves as a notification of acceptance or rejection and may include reasons for rejection.
+
+Example:
+
+ISA*00*          *00*          *ZZ*SENDERID      *ZZ*RECEIVERID    *YYMMDD*HHMM*U*00501*000000001*0*P*>~
+GS*FA*SENDERID*RECEIVERID*YYMMDD*HHMM*1*X*005010~
+ST*824*0001~
+BGN*00*ORIGINAL GROUP CONTROL NUMBER*20230701*HHMM*STATUS CODE~
+TRN*1*ORIGINAL TRANSACTION CONTROL NUMBER*0001~
+AK1*PO*ORIGINAL TRANSACTION SET PURPOSE CODE~
+AK2*810*ORIGINAL TRANSACTION SET CONTROL NUMBER*20230701~
+AK5*A~
+AK9*A*1*1*1~
+SE*8*0001~
+GE*1*1~
+IEA*1*000000001~
+
+Purpose in Lizgate Enterprise:
+In Lizgate Enterprise, the EDI 824 document enhances communication between trading partners by promptly notifying them of transaction status updates, ensuring timely resolution of issues and improving overall transaction efficiency.

@@ -1,0 +1,16 @@
+EDI Document 864 - Text Message
+Function:
+The EDI 864 Text Message document is used to transmit structured text messages between trading partners.
+
+Example:
+
+ISA*00*          *00*          *ZZ*SENDERID      *ZZ*RECEIVERID    *YYMMDD*HHMM*U*00501*000000001*0*P*>~
+GS*TM*SENDERID*RECEIVERID*YYMMDD*HHMM*1*X*005010~
+ST*864*0001~
+MSG*ORIGINAL CONTROL NUMBER*MESSAGE TEXT~
+SE*3*0001~
+GE*1*1~
+IEA*1*000000001~
+
+Purpose in Lizgate Enterprise:
+In Lizgate Enterprise, the EDI 864 document enhances communication between trading partners by providing a standardized format for transmitting textual messages, ensuring clarity and consistency in message exchanges.

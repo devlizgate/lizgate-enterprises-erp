@@ -1,0 +1,19 @@
+EDI Document 997 - Functional Acknowledgment
+Function:
+The EDI 997 Functional Acknowledgment document is used to confirm the receipt of an EDI transaction. It indicates whether the transaction was successfully received and processed.
+
+Example:
+
+ISA*00*          *00*          *ZZ*SENDERID      *ZZ*RECEIVERID    *YYMMDD*HHMM*U*00501*000000001*0*P*>~
+GS*FA*SENDERID*RECEIVERID*YYMMDD*HHMM*1*X*005010~
+ST*997*0001~
+AK1*PO*ORIGINAL TRANSACTION SET PURPOSE CODE~
+AK2*810*ORIGINAL TRANSACTION SET CONTROL NUMBER*20230701~
+AK5*A~
+AK9*A*1*1*1~
+SE*8*0001~
+GE*1*1~
+IEA*1*000000001~
+
+Purpose in Lizgate Enterprise:
+In Lizgate Enterprise, the EDI 997 document enhances transaction reliability by providing confirmation of receipt and processing of EDI transactions, ensuring data integrity and facilitating timely issue resolution.

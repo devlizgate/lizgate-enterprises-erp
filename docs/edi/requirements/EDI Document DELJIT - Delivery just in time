@@ -1,0 +1,32 @@
+EDI Document DELJIT - Delivery just in time
+Function:
+The EDI DELJIT Document will support the just-in-time delivery (JIT) manufacturing strategy by providing advanced notification of shipment schedules to suppliers.
+
+Example:
+
+ISA*00*          *00*          *ZZ*SENDERID      *ZZ*RECEIVERID    *YYMMDD*HHMM*U*00501*000000001*0*P*>~
+GS*SH*SENDERID*RECEIVERID*YYMMDD*HHMM*1*X*005010~
+ST*DELJIT*0001~
+BSN*00*ORIGINAL CONTROL NUMBER*ORIGINAL DATE*ORIGINAL TIME*TRANSACTION TYPE*ORIGINAL REFERENCE NUMBER~
+HL*1**S~
+TD1*PCS*5*SKID~
+REF*BM*ORIGINAL REFERENCE NUMBER~
+DTM*011*20230701~
+N1*SF*SHIP FROM NAME*92*SHIPFROMID~
+N1*ST*SHIP TO NAME*92*SHIPTOID~
+HL*2*1*O~
+PRF*ORIGINAL REFERENCE NUMBER~
+TD5*O*2****See note~
+N1*CN*CONSIGNEE NAME*92*CONSIGNEEID~
+LIN*1*PRODUCT CODE*UPC*PRODUCT DESCRIPTION~
+UIT*EA~
+SN1*10*100*EA*UPC*PRODUCT DESCRIPTION~
+HL*3*2*I~
+MAN*GM*MANUFACTURER PART NUMBER~
+CTT*1*TOTAL LINE ITEMS~
+SE*13*0001~
+GE*1*1~
+IEA*1*000000001~
+
+Purpose in Lizgate Enterprise:
+The EDI DELJIT document enhances the just-in-time delivery (JIT) manufacturing strategy by providing advanced notification of shipment schedules to suppliers, facilitating efficient production planning and inventory management.

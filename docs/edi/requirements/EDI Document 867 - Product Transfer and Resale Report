@@ -1,0 +1,22 @@
+EDI Document 867 - Product Transfer and Resale Report
+Function:
+The EDI 867 Product Transfer and Resale Report document is used to provide trading partners with information on product transfers and resales.
+
+Example:
+
+ISA*00*          *00*          *ZZ*SENDERID      *ZZ*RECEIVERID    *YYMMDD*HHMM*U*00501*000000001*0*P*>~
+GS*TR*SENDERID*RECEIVERID*YYMMDD*HHMM*1*X*005010~
+ST*867*0001~
+BSS*00*ORIGINAL CONTROL NUMBER*ORIGINAL DATE*ORIGINAL TIME*TRANSACTION TYPE*ORIGINAL REFERENCE NUMBER~
+DTM*002*20230701~
+N1*SU*SUPPLIER NAME*92*SUPPLIERID~
+LIN*1*PRODUCT CODE*UPC*PRODUCT DESCRIPTION~
+UIT*EA~
+PO4*1*100*EA~
+DTM*010*20230701~
+SE*10*0001~
+GE*1*1~
+IEA*1*000000001~
+
+Purpose in Lizgate Enterprise:
+In Lizgate Enterprise, the EDI 867 document supports inventory management and sales tracking by providing detailed reports on product transfers and resales, facilitating informed decision-making and inventory optimization.

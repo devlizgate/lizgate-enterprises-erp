@@ -1,0 +1,23 @@
+EDI Document DELFOR - Delivery Schedule/Forecast
+Function:
+The EDI DELFOR Delivery Schedule/Forecast document is used to communicate detailed delivery schedules and forecasts to suppliers.
+
+Example:
+
+ISA*00*          *00*          *ZZ*SENDERID      *ZZ*RECEIVERID    *YYMMDD*HHMM*U*00501*000000001*0*P*>~
+GS*DS*SENDERID*RECEIVERID*YYMMDD*HHMM*1*X*005010~
+ST*DELFOR*0001~
+BFR*00*ORIGINAL CONTROL NUMBER*ORIGINAL DATE*ORIGINAL TIME*TRANSACTION TYPE*ORIGINAL REFERENCE NUMBER~
+DTM*002*20230701~
+N1*SU*BUYER NAME*92*BUYERID~
+N1*ST*SUPPLIER NAME*92*SUPPLIERID~
+LIN*1*PRODUCT CODE*UPC*PRODUCT DESCRIPTION~
+UIT*EA~
+PO4*1*100*EA~
+DTM*010*20230701~
+SE*10*0001~
+GE*1*1~
+IEA*1*000000001~
+
+Purpose in Lizgate Enterprise:
+In Lizgate Enterprise, the EDI DELFOR document supports efficient production planning and inventory management by providing suppliers with detailed delivery schedules and forecasts, ensuring timely fulfillment of customer orders.

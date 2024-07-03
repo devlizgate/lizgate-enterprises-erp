@@ -1,0 +1,26 @@
+EDI Document 810 - Invoice
+Function:
+The EDI 810 Invoice document is used for electronically transmitting invoice data from a supplier to a buyer. It includes details such as invoice number, items purchased, quantities, prices, and payment terms.
+
+Example:
+
+ISA*00*          *00*          *ZZ*SENDERID      *ZZ*RECEIVERID    *YYMMDD*HHMM*U*00501*000000001*0*P*>~
+GS*IN*SENDERID*RECEIVERID*YYMMDD*HHMM*1*X*005010~
+ST*810*0001~
+BIG*20230701*12345678**20180927~
+N1*BT*BUYER NAME*92*BUYERID~
+N1*ST*SUPPLIER NAME*92*SUPPLIERID~
+ITD*01*2*30***3% 30 NET 31~
+DTM*011*20230701~
+FOB*PP~
+IT1*1*10*EA*15.75**UP*PRODUCTCODE1*VP*SKU12345~
+IT1*2*20*EA*12.50**UP*PRODUCTCODE2*VP*SKU67890~
+TDS*19961231~
+CTT*2~
+AMT*1*175*~
+SE*12*0001~
+GE*1*1~
+IEA*1*000000001~
+
+Purpose in Lizgate Enterprise:
+In Lizgate Enterprise, the EDI 810 document facilitates seamless integration of invoice data into the ERP system, automating the invoicing process and ensuring accuracy in financial transactions.

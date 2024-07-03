@@ -1,0 +1,23 @@
+EDI Document 820 - Payment Order/Remittance Advice
+Function:
+The EDI 820 Payment Order/Remittance Advice document is used to transmit payment instructions from a buyer to a financial institution, detailing which invoices are being paid and how.
+
+Example:
+
+ISA*00*          *00*          *ZZ*SENDERID      *ZZ*RECEIVERID    *YYMMDD*HHMM*U*00501*000000001*0*P*>~
+GS*PO*SENDERID*RECEIVERID*YYMMDD*HHMM*1*X*005010~
+ST*820*0001~
+BPR*I*123456789*PPD*123456789*CH*999999999*01*123456789*DA*20180701~
+TRN*1*123456789*1512345678~
+REF*EV*INVOICE1234~
+DTM*050*20180701~
+N1*PR*PAYEE NAME*92*PAYEEID~
+N1*PE*PAYER NAME*92*PAYERID~
+RMR*IV*123456789~
+ENT*1*PAYMENT IDENTIFICATION*20180701*123.45*PAYMENTTYPE*PP*1234567890~
+SE*9*0001~
+GE*1*1~
+IEA*1*000000001~
+
+Purpose in Lizgate Enterprise:
+In Lizgate Enterprise, the EDI 820 document streamlines the payment process by automating the generation and transmission of payment instructions, improving cash flow management and reducing manual errors.

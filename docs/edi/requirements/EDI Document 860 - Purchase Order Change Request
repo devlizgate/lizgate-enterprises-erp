@@ -1,0 +1,21 @@
+EDI Document 860 - Purchase Order Change Request
+Function:
+The EDI 860 Purchase Order Change Request document is used to request changes to a previously submitted purchase order, such as quantity adjustments or cancellation.
+
+Example:
+
+ISA*00*          *00*          *ZZ*SENDERID      *ZZ*RECEIVERID    *YYMMDD*HHMM*U*00501*000000001*0*P*>~
+GS*PC*SENDERID*RECEIVERID*YYMMDD*HHMM*1*X*005010~
+ST*860*0001~
+BEG*00*ORIGINAL CONTROL NUMBER*20230701*HHMM*TRANSACTION TYPE*ORIGINAL REFERENCE NUMBER~
+N1*BY*BUYER NAME*92*BUYERID~
+N1*SU*SUPPLIER NAME*92*SUPPLIERID~
+PO1*1*100*EA*UNIT PRICE**UP*PRODUCT CODE*VP*SKU12345~
+PO1*2*200*EA*UNIT PRICE**UP*PRODUCT CODE*VP*SKU67890~
+CTT*2*TOTAL LINE ITEMS~
+SE*9*0001~
+GE*1*1~
+IEA*1*000000001~
+
+Purpose in Lizgate Enterprise:
+In Lizgate Enterprise, the EDI 860 document facilitates efficient order management by enabling suppliers to request and process changes to purchase orders electronically, reducing administrative overhead and improving order accuracy.

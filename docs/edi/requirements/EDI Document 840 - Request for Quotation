@@ -1,0 +1,23 @@
+EDI Document 840 - Request for Quotation
+Function:
+The EDI 840 Request for Quotation (RFQ) document is used to solicit price and delivery information from suppliers for goods or services.
+
+Example:
+
+ISA*00*          *00*          *ZZ*SENDERID      *ZZ*RECEIVERID    *YYMMDD*HHMM*U*00501*000000001*0*P*>~
+GS*RF*SENDERID*RECEIVERID*YYMMDD*HHMM*1*X*005010~
+ST*840*0001~
+BFR*00*ORIGINAL CONTROL NUMBER*ORIGINAL DATE*ORIGINAL TIME*TRANSACTION TYPE*ORIGINAL REFERENCE NUMBER~
+DTM*002*20230701~
+N1*SU*BUYER NAME*92*BUYERID~
+N1*ST*SUPPLIER NAME*92*SUPPLIERID~
+LIN*1*PRODUCT CODE*UPC*PRODUCT DESCRIPTION~
+UIT*EA~
+PO4*1*100*EA~
+DTM*010*20230701~
+SE*10*0001~
+GE*1*1~
+IEA*1*000000001~
+
+Purpose in Lizgate Enterprise:
+In Lizgate Enterprise, the EDI 840 document streamlines the procurement process by automating the solicitation of price and delivery information from suppliers, facilitating efficient sourcing decisions and improving supplier relationships.
